@@ -1,0 +1,5 @@
+#header {
+    background: -webkit-linear-gradient(#f00, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
