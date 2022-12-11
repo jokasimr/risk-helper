@@ -16,13 +16,56 @@
           <input id="min_attackers" type="number" style="width: 4em" min=0>
         </p>
         <hr>
-        <p>
-          Attackers:
-          <input id="attackers" type="number" style="width: 4em" min=0>
-        </p>
-        <p>
-          Defenders: <input id="defenders" type="number" style="width: 4em" min=0>
-        </p>
+        <div class="troop-input-wrapper">
+          <div class="troop-input-container">
+            ⚔️
+            <input id="attackers" class="troop-input"
+                   type="number" value=3
+                   min=0 max=999
+                   maxlength="3">
+          </div>
+          <div class="add-button">
+            <button type="button" onclick="attackers_add(1)">+1</button>
+            <button type="button" onclick="attackers_add(-1)">-1</button>
+          </div>
+          <div class="add-button">
+            <button type="button" onclick="attackers_add(5)">+5</button>
+            <button type="button" onclick="attackers_add(-5)">-5</button>
+          </div>
+          <div class="add-button">
+            <button type="button" onclick="attackers_add(10)">+10</button>
+            <button type="button" onclick="attackers_add(-10)">-10</button>
+          </div>
+        </div>
+        <div class="troop-input-wrapper">
+          <div class="troop-input-container">
+
+            🛡️
+            <input id="defenders" class="troop-input"
+                   type="number" value=3
+                   min=0 max=999
+                   maxlength="3">
+
+          </div>
+          <div class="add-button">
+            <button type="button" onclick="defenders_add(1)">+1</button>
+            <button type="button" onclick="defenders_add(-1)">-1</button>
+          </div>
+          <div class="add-button">
+            <button type="button" onclick="defenders_add(5)">+5</button>
+            <button type="button" onclick="defenders_add(-5)">-5</button>
+          </div>
+          <div class="add-button">
+            <button type="button" onclick="defenders_add(10)">+10</button>
+            <button type="button" onclick="defenders_add(-10)">-10</button>
+          </div>
+          <div>
+            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
+            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
+            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
+            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
+          </div>
+        </div>
         <p>
           <button type="submit">Go!</button>
         </p>

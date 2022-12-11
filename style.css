@@ -3,3 +3,22 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.troop-input-wrapper {
+    display: flex;
+    font-size: 2em;
+}
+
+.trop-input-container {
+    display: flex;
+}
+
+.troop-input {
+    width: 4ch;
+    font-size: 1em;
+}
+
+.add-button {
+    display: flex;
+    flex-direction: column;
+}

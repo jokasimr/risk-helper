@@ -79,3 +79,6 @@ function go() {
         attackers_input.focus();
     }
 }
+
+function attackers_add(k) {attackers_input.value = Math.min(Math.max(parseInt(attackers_input.value) + k, attackers_input.min), attackers_input.max) || 0};
+function defenders_add(k) {defenders_input.value = Math.min(Math.max(parseInt(defenders_input.value) + k, defenders_input.min), defenders_input.max) || 0};
