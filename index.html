@@ -24,22 +24,7 @@
                    min=0 max=999
                    maxlength="3">
           </div>
-          <div class="add-button">
-            <button type="button" onclick="attackers_add(1)">+1</button>
-            <button type="button" onclick="attackers_add(-1)">-1</button>
-          </div>
-          <div class="add-button">
-            <button type="button" onclick="attackers_add(5)">+5</button>
-            <button type="button" onclick="attackers_add(-5)">-5</button>
-          </div>
-          <div class="add-button">
-            <button type="button" onclick="attackers_add(10)">+10</button>
-            <button type="button" onclick="attackers_add(-10)">-10</button>
-          </div>
-        </div>
-        <div class="troop-input-wrapper">
           <div class="troop-input-container">
-
             🛡️
             <input id="defenders" class="troop-input"
                    type="number" value=3
@@ -47,28 +32,8 @@
                    maxlength="3">
 
           </div>
-          <div class="add-button">
-            <button type="button" onclick="defenders_add(1)">+1</button>
-            <button type="button" onclick="defenders_add(-1)">-1</button>
-          </div>
-          <div class="add-button">
-            <button type="button" onclick="defenders_add(5)">+5</button>
-            <button type="button" onclick="defenders_add(-5)">-5</button>
-          </div>
-          <div class="add-button">
-            <button type="button" onclick="defenders_add(10)">+10</button>
-            <button type="button" onclick="defenders_add(-10)">-10</button>
-          </div>
-          <div>
-            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
-            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
-            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
-            <button type="button" onclick="defenders_input.value=this.innerText">10</button>
-          </div>
+          <button id="go-button" type="submit">Go!</button>
         </div>
-        <p>
-          <button type="submit">Go!</button>
-        </p>
       </form>
       <div id="fight_console"></div>
       <script src="index.js"></script>

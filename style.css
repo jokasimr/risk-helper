@@ -18,7 +18,8 @@
     font-size: 1em;
 }
 
-.add-button {
-    display: flex;
-    flex-direction: column;
+#go-button {
+    margin-left: 0.2em;
+    font-weight: bold;
+    font-size: 0.8em;
 }
