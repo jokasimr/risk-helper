@@ -1,4 +1,3 @@
-const DEBUG = false;
 const SWORD = "⚔️";
 const SHIELD = "🛡️";
 
@@ -28,15 +27,9 @@ function fight(defenders, attackers, min_attackers, history) {
         if (d[i] >= a[i])
              attackers -= 1;
         else defenders -= 1;
-        history[history.length - 1].attackers = attackers;
-        history[history.length - 1].defenders = defenders;
-        if (DEBUG) console.log({
-            attack_dices: a,
-            defend_dices: d,
-            state: [attackers, "/", defenders].join(),
-            i: i
-        });
     }
+    history[history.length - 1].attackers = attackers;
+    history[history.length - 1].defenders = defenders;
     return fight(defenders, attackers, min_attackers, history);
 }
 
